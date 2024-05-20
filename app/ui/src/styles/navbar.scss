@@ -1,0 +1,95 @@
+.profile {
+    width: 100%;
+    button {
+
+        min-width: 44px;
+        min-height: 44px;
+        transition: all .35s linear;
+
+
+    }
+}
+
+
+.search-input {
+    background-image: url("../assets/Search-1.svg");
+    background-repeat: no-repeat;
+    background-position: center right 10px;
+    background-size: 20px;
+    transition: width .35s linear;
+    border: 1px solid red;
+    text-indent: 15px;
+
+    &:focus {
+        background-position: center right 10px;
+    }
+}
+
+.link {
+
+    a {
+        line-height: 80px;
+
+        &.active,
+        &:hover {
+            border-bottom: 2px solid green;
+        }
+    }
+}
+
+
+@media only screen and (max-width:1200px) {
+
+
+    .search-input {
+
+        background-position: center left 10px;
+
+
+        &:focus {
+            background-position: center left 10px;
+        }
+    }
+
+
+
+}
+
+
+
+@media only screen and (max-width:1336px) {
+
+
+    .link a {
+        line-height: 60px;
+    }
+
+    .profile {
+        button {
+            span.login {
+                display: none;
+            }
+
+
+        }
+    }
+
+
+}
+
+.shop {
+    background-image: url("../assets/Shop.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
+
+
+
+
+.profile_hidden {
+    background-image: url("../assets/filter.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+}
